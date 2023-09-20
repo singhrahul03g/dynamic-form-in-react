@@ -1,3 +1,4 @@
+import App from "../App";
 import useWindowWidth from "../customHooks/useWindowWidth"
 
 
@@ -7,7 +8,7 @@ function DisplayWindowWidth() {
 
     return (
       <>
-    
+      <App/>
     <div>
       <h4>Window Width Detection with React Custom Hook</h4>
       <p>Width: {windowWidth}</p>

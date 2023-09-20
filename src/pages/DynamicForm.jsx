@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./DynamicForm.css";
+import App from "../App";
 
 function DynamicForm(props) {
   const formFields = props.formFields;
@@ -39,6 +40,7 @@ function DynamicForm(props) {
 
   return (
     <>
+    <App/>
       <form onSubmit={handleSubmit}>
         {formFields.length
           ? formFields.map((field, index) => {

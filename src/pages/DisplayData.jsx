@@ -1,5 +1,6 @@
 import { useEffect, useState, createContext } from "react";
 import DisplayPosts from "../components/DisplayPosts";
+import App from "../App";
 
 export  const PostContext = createContext()
 
@@ -24,6 +25,7 @@ function DisplayData() {
 
   return (
     <>
+      <App/>
     <PostContext.Provider value={data}>
       <DisplayPosts/>
     </PostContext.Provider>
